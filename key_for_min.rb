@@ -7,6 +7,8 @@ def key_for_min_value(name_hash)
   name_hash.each {|key, value|
     if value < last_value
       last_value = value
+      last_key = key
     end
   }
+
 end
